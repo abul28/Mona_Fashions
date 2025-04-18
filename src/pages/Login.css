@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #994ECC, #3E187A);
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+.admin-login-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Logo Styling */
+.login-logo {
+  width: 80px; /* Adjust size */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Boutique Name Styling */
+.boutique-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #994ECC; /* Indigo */
+  margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h4 {
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: #f5f5f5;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.admin-login-box input:focus {
+  outline: none;
+  background: #e8e8e8;
+}
+
+.admin-login-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 12px;
+}
+
+.admin-login-box button[type="submit"] {
+  background: #994ECC;
+  color: white;
+}
+
+.admin-login-box button[type="submit"]:hover {
+  background: #994ECC;
+}
+
+.admin-login-box button:last-child {
+  background: transparent;
+  color: #994ECC;
+  border: 2px solid #994ECC;
+}
+
+.admin-login-box button:last-child:hover {
+  background: #994ECC;
+  color: white;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

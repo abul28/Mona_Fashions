@@ -1,0 +1,149 @@
+/* Scope all styles inside .product-details-container */
+.product-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+  }
+  
+  /* Image Section */
+  .product-details-container .image-container {
+    width: 60%;
+    height: 30vh;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-details-container .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Product Details */
+  .product-details-container .product-info {
+    text-align: left;
+    margin-top: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    height: 25%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-details-container .product-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .product-details-container .product-description {
+    font-size: 16px;
+    color: #555;
+    margin-top: 8px;
+  }
+  
+  .product-details-container .product-color {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .product-details-container .product-color span {
+    color: #6366f1;
+  }
+  
+  /* Pricing */
+  .product-details-container .price-section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .product-details-container .current-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .product-details-container .original-price {
+    font-size: 18px;
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .product-details-container .discount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e60023;
+  }
+  
+  /* Place Order Button - Fixed at Bottom */
+  .product-details-container .place-order-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #553C8B;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .product-details-container .place-order-btn:hover {
+    background: #553C8B;
+  }
+
+  .size-selection {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .size-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .size-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .size-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .size-button.selected {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+  }
+  
+  
+  
